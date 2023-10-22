@@ -33,8 +33,12 @@ $breakpoint-sm: 48em!default;
 /** 576px oder schmaler */
 $breakpoint-xs: 36em!default;
 
+/** 480px oder schmaler */
+$breakpoint-xxs: 30em!default;
+
 /** Breakpoints */
 @media (max-width: $breakpoint-lg) {}
 @media (max-width: $breakpoint-md) {}
 @media (max-width: $breakpoint-sm) {}
 @media (max-width: $breakpoint-xs) {}
+@media (max-width: $breakpoint-xxs) {}
