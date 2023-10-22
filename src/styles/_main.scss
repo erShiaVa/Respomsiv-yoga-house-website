@@ -1,0 +1,146 @@
+@use './variables';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: variables.$bgColorLight;
+}
+.title{
+    font-family: variables.$titleFont;
+    font-size: 4rem;
+    line-height: 141.5%;
+    letter-spacing: 0.04rem;
+    text-transform: uppercase;
+    text-shadow: variables.$textShadow;
+    color: variables.$fontColorDark;
+    text-align: center;
+    margin-top: 4rem;
+    @media (max-width: variables.$breakpoint-md) {
+        margin-top: 3.65rem;
+        font-size: 3.15rem;
+    }
+    @media (max-width: variables.$breakpoint-xs){
+        margin-top: 1.85rem;
+        font-size: 2.15rem;
+    }
+
+}
+.heading-one{
+    font-family: variables.$titleFont;
+    font-size: 2.85rem;
+    text-transform: uppercase;
+    line-height: 141.5%;
+    letter-spacing: 0.033rem;
+    text-shadow: variables.$textShadow;
+    color: variables.$fontColorDark;
+    text-align: center;
+    padding-bottom: 1.15rem;
+    @media (max-width: variables.$breakpoint-sm) {
+        font-size: 1.85rem;
+    }
+}
+.heading-two{
+    font-family: variables.$titleFont;
+    font-size: 2.05rem;
+    text-transform: uppercase;
+    line-height: 141.5%;
+    letter-spacing: 0.033rem;
+    text-shadow: variables.$textShadow;
+    color: variables.$fontColorDark;
+    padding-bottom: 1.75rem;
+    @media (max-width: variables.$breakpoint-md) {
+        font-size: 1.65rem;
+    }
+}
+.heading-three{
+    font-family: variables.$titleFont;
+    font-size: 1.65rem;
+    text-transform: uppercase;
+    line-height: 150.5%;
+    letter-spacing: 0.033rem;
+    text-shadow: variables.$textShadow;
+    color: variables.$fontColorDark;
+    padding-bottom: 1.75rem;
+    @media (max-width: variables.$breakpoint-md) {
+        font-size: 1.25rem;
+    }
+}
+.subtitle{
+    font-size: 1.05rem;
+    font-family: variables.$bodyFont;
+    font-weight: 600;
+    color: variables.$fontColorLight;
+    line-height: 166%;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+    padding-bottom: 1.75rem;
+    @media (max-width: variables.$breakpoint-md) {
+        font-size: 0.91rem;
+    }
+}
+.paragraph{
+    color: variables.$fontColorLight;
+    font-family: variables.$bodyFont;
+    font-size: 0.88rem;
+    line-height: 199%;
+    letter-spacing: 0.096rem;
+    padding-bottom: 0.85rem;
+    @media (max-width: variables.$breakpoint-sm) {
+        font-size: 0.78rem;
+    }
+}
+.button-primary{
+    padding: 0.75rem 1.75rem;
+    box-shadow: variables.$buttonShadow;
+    background-color: variables.$primaryLight;
+    border-radius: 0.15rem;
+    border: 1px solid variables.$primaryLight;
+    color: variables.$fontColorDark;
+    text-transform: uppercase;
+    font-family: variables.$titleFont;
+    font-size: 0.88rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+    &:hover{
+        background-color: variables.$primaryDark;
+    }
+    @media (max-width: variables.$breakpoint-sm) {
+        font-size: 0.78rem;
+    }
+}
+.button-secondary{
+    padding: 0.75rem 1.75rem;
+    box-shadow: variables.$buttonShadow;
+    border: 1px solid variables.$fontColorLight;
+    border-radius: 0.15rem;
+    color: variables.$fontColorLight;
+    text-transform: uppercase;
+    font-family: variables.$titleFont;
+    font-weight: 600;
+    font-size: 0.88rem;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    transition: background-color 0.25s ease,
+                color 0.25s ease;
+    &:hover{
+        color: variables.$fontColorDark;
+        background-color: variables.$bgColorDark;
+    }
+    @media (max-width: variables.$breakpoint-sm) {
+        font-size: 0.78rem;
+    }
+}
+.container{
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 4rem 0;
+}

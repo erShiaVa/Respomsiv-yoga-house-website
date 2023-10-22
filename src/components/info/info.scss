@@ -1,0 +1,16 @@
+@use '../../styles/main';
+@use '../../styles/variables';
+
+.info{
+    background-color: variables.$bgColorDark;
+    margin-top: 2.25rem;
+}
+.info__content{
+    max-width: 66rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 3rem;
+    .info__cta{
+        padding-top: 1.65rem;
+    }
+}

@@ -1,0 +1,47 @@
+@use '../../styles/main';
+@use '../../styles/variables';
+
+.retreat__container{
+    max-width: 76rem;
+    margin: 0 auto;
+    padding: 4rem 2rem 0 2rem;
+    &::after {
+        content: "";
+        display: table; 
+        clear: both;
+    }
+    @media (max-width: variables.$breakpoint-lg) {
+        max-width: 71.5rem;
+    }
+    @media (max-width: variables.$breakpoint-md) {
+        max-width: 41rem;
+    }
+    .retreat__img{
+        width: 32rem;
+        height: 32rem;
+        border-radius: 1000rem;
+        object-fit: cover;
+        shape-outside: circle(50% at 50% 50%);
+        margin-right: 2rem;
+        float: left; 
+        @media (max-width: variables.$breakpoint-md) {
+            width: 22rem;
+            height: 22rem;
+        }
+        @media (max-width: variables.$breakpoint-sm) {
+            width: 21rem;
+            height: 21rem;
+        }
+        @media (max-width: variables.$breakpoint-xs) {
+            width: 20rem;
+            height: 20rem;
+        }
+    }
+    .retreat__text{ 
+        margin-top: 5rem;
+        @media (max-width: variables.$breakpoint-md) {
+            margin-top: 2rem; 
+        }
+    }
+}
+

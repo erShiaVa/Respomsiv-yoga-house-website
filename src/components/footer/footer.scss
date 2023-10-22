@@ -1,0 +1,68 @@
+@use '../../styles/main';
+@use '../../styles/variables';
+
+footer{
+    background-color: variables.$bgColorDark;
+    padding: 4rem 2rem;
+    margin-top: 2rem;
+    border-top: 2px solid variables.$fontColorDark;
+}
+.footer{
+    .footer__container{
+        max-width: 80rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: variables.$breakpoint-xs) {
+            gap: 1.25rem;
+        }
+    }
+}
+.footer__heading{
+    font-family: variables.$titleFont;
+    text-transform: uppercase;
+    color: variables.$fontColorDark;
+    font-size: 0.95rem;
+    padding-bottom: 0.45rem;
+    @media (max-width: variables.$breakpoint-xs) {
+        font-size: 0.75rem;
+    }
+}
+.footer__text{
+    font-family: variables.$bodyFont;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    padding-top: 0.65rem;
+    letter-spacing: 0.05rem;
+    color: variables.$fontColorLight;
+    @media (max-width: variables.$breakpoint-xs) {
+        font-size: 0.5rem;
+        letter-spacing: 0;
+    }
+}
+.nav__logo {
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-family: variables.$titleFont;
+      color: variables.$fontColorDark;
+      @media (max-width: variables.$breakpoint-xs) {
+        font-size: 1.25rem;
+        }
+      span {
+        text-transform: lowercase;
+      }
+    }
+}
+.social__icons{
+    display: flex;
+    align-items: center;
+    gap: 1.85rem;
+    color: variables.$fontColorLight;
+    padding: 1.65rem 0;
+    cursor: pointer;
+    @media (max-width: variables.$breakpoint-xs) {
+        gap: 1.25rem;
+    }
+}

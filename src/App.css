@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Tenor+Sans&display=swap");
+/** 1200px oder schmaler */
+/** 992px oder schmaler */
+/** 768px oder schmaler */
+/** 576px oder schmaler */
+/** Breakpoints */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+.title {
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 4rem;
+  line-height: 141.5%;
+  letter-spacing: 0.04rem;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 8px rgba(60, 57, 57, 0.25);
+  color: #303651;
+  text-align: center;
+  margin-top: 6.85rem;
+}
+@media (max-width: 62em) {
+  .title {
+    margin-top: 3.85rem;
+    font-size: 3.15rem;
+  }
+}
+@media (max-width: 36em) {
+  .title {
+    margin-top: 1.85rem;
+    font-size: 2.15rem;
+  }
+}
+
+.heading-one {
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 2.85rem;
+  text-transform: uppercase;
+  line-height: 141.5%;
+  letter-spacing: 0.033rem;
+  text-shadow: 4px 4px 8px rgba(60, 57, 57, 0.25);
+  color: #303651;
+  text-align: center;
+}
+
+.heading-two {
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 2.05rem;
+  text-transform: uppercase;
+  line-height: 141.5%;
+  letter-spacing: 0.033rem;
+  text-shadow: 4px 4px 8px rgba(60, 57, 57, 0.25);
+  color: #303651;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #4A516D;
+  line-height: 166%;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  color: #4A516D;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.88rem;
+  line-height: 199%;
+  letter-spacing: 0.096rem;
+}
+
+.button-primary {
+  padding: 0.75rem 1.75rem;
+  box-shadow: 1px 1px 4px 0px rgba(102, 102, 102, 0.25);
+  background-color: #EACFC9;
+  border-radius: 0.15rem;
+  color: #4A516D;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-decoration: none;
+}
+
+.button-secondary {
+  padding: 0.75rem 1.75rem;
+  box-shadow: 1px 1px 4px 0px rgba(102, 102, 102, 0.25);
+  background-color: transparent;
+  border: 1px solid #4A516D;
+  border-radius: 0.15rem;
+  color: #4A516D;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-decoration: none;
+}
+
+.a-tag {
+  text-decoration: none;
+}/*# sourceMappingURL=App.css.map */

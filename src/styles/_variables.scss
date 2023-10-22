@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Tenor+Sans&display=swap');
+
+//color
+$bgColorLight: #FBFBFC;
+$bgColorDark: #F1F3F5;
+
+$fontColorDark: #303651;
+$fontColorLight: #4A516D;
+
+$primaryDark: #E5C5BD;
+$primaryLight: #EACFC9;
+
+$secondaryColor: #5E718B;
+
+//fonts
+$titleFont: 'Tenor Sans', sans-serif;
+$bodyFont: 'Open Sans', sans-serif;
+
+// shadow
+$textShadow: 2px 2px 6px rgba(60, 57, 57, 0.15);
+$textShadowLight: 2px 2px 9px rgba(40, 37, 37, 0.846);
+$buttonShadow: 1px 1px 4px 0px rgba(102, 102, 102, 0.25);
+
+/** 1200px oder schmaler */
+$breakpoint-lg: 75em!default;
+
+/** 992px oder schmaler */
+$breakpoint-md: 62em!default;
+
+/** 768px oder schmaler */
+$breakpoint-sm: 48em!default;
+
+/** 576px oder schmaler */
+$breakpoint-xs: 36em!default;
+
+/** Breakpoints */
+@media (max-width: $breakpoint-lg) {}
+@media (max-width: $breakpoint-md) {}
+@media (max-width: $breakpoint-sm) {}
+@media (max-width: $breakpoint-xs) {}

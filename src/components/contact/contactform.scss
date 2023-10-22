@@ -1,0 +1,92 @@
+@use '../../styles/main';
+@use '../../styles/variables';
+.contact__container{
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+.contact__heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1.85rem;
+    padding-left: 1.85rem;
+    padding-right: 1.85rem;
+}
+.contact__form{
+    max-width: 50rem;
+    margin: 0 auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+.input-group{
+    position: relative;
+}
+.input-group__input{
+    font: inherit;
+    color: variables.$fontColorLight;
+    width: 50rem;
+    height: 3.25rem;
+    padding: 0 0.9rem;
+    border: none;
+    border-radius: 0.05rem;
+    outline: 2px solid variables.$bgColorDark;
+    background-color: transparent;
+    transition: outline-color 500ms;
+    @media (max-width: variables.$breakpoint-md) {
+        width: 40rem;
+    }
+    @media (max-width: variables.$breakpoint-sm) {
+        width: 35rem;
+    }
+    @media (max-width: variables.$breakpoint-xs) {
+        width: 22rem;
+    }
+}
+.input-group__input:is(:focus, :valid){
+    outline-color: variables.$primaryDark;
+    font-family: variables.$titleFont;
+}
+.input-group__label{
+    font-family: variables.$titleFont;
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: 10px 10px;
+    color: variables.$fontColorLight;
+    transition: translate 500ms,
+                scale 500ms;
+}
+.input-group__input:focus +
+.input-group__label,
+.input-group__input:valid +
+.input-group__label{
+    padding-inline: 5px;
+    translate: 10px -14px;
+    scale: 0.8;
+    background-color: variables.$bgColorLight;
+}
+.message{
+    width: 50rem;
+    height: 12rem;
+    padding: 1.05rem 0.9rem;
+    @media (max-width: variables.$breakpoint-md) {
+        width: 40rem;
+    }
+    @media (max-width: variables.$breakpoint-sm) {
+        width: 35rem;
+    }
+    @media (max-width: variables.$breakpoint-xs) {
+        width: 22rem;
+    }
+}
+.contact__btn{
+    text-align: center;
+    padding-top: 3.85rem;
+}

@@ -1,0 +1,73 @@
+@use '../../styles/main';
+@use '../../styles/variables';
+header{
+  border-bottom: 2px solid variables.$fontColorDark;
+}
+.navbar {
+  max-width: 80rem;
+  margin: 0 auto;
+  height: auto;
+  padding: 1.25rem;
+  
+  display: flex;
+  justify-content: space-between;
+
+  .nav__logo {
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.25rem;
+      font-family: variables.$titleFont;
+      color: variables.$fontColorDark;
+      position: relative;
+      z-index: 200;
+
+      span {
+        text-transform: lowercase;
+      }
+    }
+  }
+  .nav__btn{
+    color: variables.$fontColorDark;
+    cursor: pointer;
+    position: relative;
+    z-index: 200;
+  }
+}
+.navbar__open {
+    position: fixed;
+    top: -100%;
+    right: 0; 
+    width: 100%; 
+    height: 100%;
+    background-color: variables.$bgColorDark;
+    z-index: 100; 
+    transition: top 0.5s ease-in-out;
+  
+    ul.nav__items {
+      list-style: none;
+      max-width: 30rem;
+      margin: 21rem auto;
+  
+      li {
+        a {
+          display: block;
+          color: variables.$fontColorDark;
+          text-decoration: none;
+          font-family: variables.$titleFont;
+          text-transform: uppercase;
+          padding-bottom: 0.75rem;
+          margin-bottom: 3.5rem;
+          text-align: center;
+          transition: transform 0.3s ease-in-out;
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+  
+  .navbar__open.show {
+    top: 0;
+  }

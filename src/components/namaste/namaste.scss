@@ -1,0 +1,19 @@
+@use '../../styles/main';
+@use '../../styles/variables';
+
+.namaste{
+    text-align: center;
+    .namaste__content{
+        max-width: 66rem;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 3rem;
+    }
+    .namaste__cta{
+        padding-top: 1.65rem;
+        display: flex;
+        gap: 2.25rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
