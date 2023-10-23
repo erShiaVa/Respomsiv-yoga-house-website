@@ -39,7 +39,10 @@
         width: 511px;
         height: 343px;
     }
-    
+    @media (max-width: variables.$breakpoint-xxs) {
+        width: 427px;
+        height: 265px;
+    }
 }
 .podcast__img{
     height: 100%;

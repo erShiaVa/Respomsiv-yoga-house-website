@@ -13,6 +13,12 @@
     @media (max-width: variables.$breakpoint-sm) {
         height: 56vh;
     }
+    @media (max-width: variables.$breakpoint-xxs) {
+        height: 50vh;
+    }
+    @media (max-width: variables.$breakpoint-xss) {
+        height: 40vh;
+    }
 }
 .hero__bg,
 .hero__bg-crop{
@@ -32,6 +38,12 @@
     }
     @media (max-width: variables.$breakpoint-sm) {
         height: 56vh;
+    }
+    @media (max-width: variables.$breakpoint-xxs) {
+        height: 50vh;
+    }
+    @media (max-width: variables.$breakpoint-xss) {
+        height: 40vh;
     }
 }
 .hero__bg{

@@ -48,6 +48,12 @@
     @media (max-width: variables.$breakpoint-xs) {
         width: 22rem;
     }
+    @media (max-width: variables.$breakpoint-xxs) {
+        width: 20rem;
+    }
+    @media (max-width: variables.$breakpoint-xss) {
+        width: 18rem;
+    }
 }
 .input-group__input:is(:focus, :valid){
     outline-color: variables.$primaryDark;
@@ -62,6 +68,9 @@
     color: variables.$fontColorLight;
     transition: translate 500ms,
                 scale 500ms;
+    @media (max-width: variables.$breakpoint-xxs) {
+        font-size: 0.68rem;
+    }
 }
 .input-group__input:focus +
 .input-group__label,
@@ -84,6 +93,12 @@
     }
     @media (max-width: variables.$breakpoint-xs) {
         width: 22rem;
+    }
+    @media (max-width: variables.$breakpoint-xxs) {
+        width: 20rem;
+    }
+    @media (max-width: variables.$breakpoint-xss) {
+        width: 18rem;
     }
 }
 .contact__btn{

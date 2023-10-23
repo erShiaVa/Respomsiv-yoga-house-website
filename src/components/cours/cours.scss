@@ -34,7 +34,14 @@
         width: 465px;
         height: 295px;
     }
-    
+    @media (max-width: variables.$breakpoint-xxs) {
+        width: 416px;
+        height: 265px;
+    }
+    @media (max-width: variables.$breakpoint-xss) {
+        width: 340px;
+        height: 226px;
+    }
 }
 .card__image{
     height: 100%;
@@ -74,6 +81,9 @@
     text-shadow: variables.$textShadowLight;
     border-bottom: 1px solid variables.$bgColorLight;
     padding-bottom: 0.5rem;
+    @media (max-width: variables.$breakpoint-xss) {
+        font-size: 1.25rem;
+    }
 }
 .card__description{
     font-family: variables.$bodyFont;
@@ -84,6 +94,9 @@
     translate: -25px;
     transition: opacity 0.25s,
                 translate 0.25s;
+    @media (max-width: variables.$breakpoint-xss) {
+        font-size: 0.75rem;
+    }
 }
 .card:hover .card__description{
     opacity: 1;

@@ -17,9 +17,9 @@ $titleFont: 'Tenor Sans', sans-serif;
 $bodyFont: 'Open Sans', sans-serif;
 
 // shadow
-$textShadow: 2px 2px 6px rgba(60, 57, 57, 0.15);
+$textShadow: 1px 1px 4px rgba(60, 57, 57, 0.05);
 $textShadowLight: 2px 2px 9px rgba(40, 37, 37, 0.846);
-$buttonShadow: 1px 1px 4px 0px rgba(102, 102, 102, 0.25);
+$buttonShadow: 1px 1px 2px 0px rgba(102, 102, 102, 0.15);
 
 /** 1200px oder schmaler */
 $breakpoint-lg: 75em!default;
@@ -36,9 +36,13 @@ $breakpoint-xs: 36em!default;
 /** 480px oder schmaler */
 $breakpoint-xxs: 30em!default;
 
+/** 384px oder schmaler */
+$breakpoint-xss: 24em!default;
+
 /** Breakpoints */
 @media (max-width: $breakpoint-lg) {}
 @media (max-width: $breakpoint-md) {}
 @media (max-width: $breakpoint-sm) {}
 @media (max-width: $breakpoint-xs) {}
 @media (max-width: $breakpoint-xxs) {}
+@media (max-width: $breakpoint-xss) {}

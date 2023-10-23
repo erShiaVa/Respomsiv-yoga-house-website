@@ -30,7 +30,10 @@ body{
         font-size: 2.15rem;
     }
     @media (max-width: variables.$breakpoint-xxs) {
-        font-size: 1.95rem;
+        font-size: 1.65rem;
+    }
+    @media (max-width: variables.$breakpoint-xss) {
+        font-size: 1.45rem;
     }
 }
 .heading-one{
@@ -46,6 +49,12 @@ body{
     @media (max-width: variables.$breakpoint-sm) {
         font-size: 1.85rem;
     }
+    @media (max-width: variables.$breakpoint-xxs) {
+        font-size: 1.5rem;
+    }
+    @media (max-width: variables.$breakpoint-xss) {
+        font-size: 1.25rem;
+    }
 }
 .heading-two{
     font-family: variables.$titleFont;
@@ -58,6 +67,12 @@ body{
     padding-bottom: 1.75rem;
     @media (max-width: variables.$breakpoint-md) {
         font-size: 1.65rem;
+    }
+    @media (max-width: variables.$breakpoint-xxs) {
+        font-size: 1.35rem;
+    }
+    @media (max-width: variables.$breakpoint-xss) {
+        font-size: 1.15rem;
     }
 }
 .heading-three{
@@ -72,6 +87,10 @@ body{
     @media (max-width: variables.$breakpoint-md) {
         font-size: 1.25rem;
     }
+    @media (max-width: variables.$breakpoint-xxs) {
+        font-size: 1.15rem;
+        text-align: center;
+    }
 }
 .subtitle{
     font-size: 1.05rem;
@@ -85,6 +104,12 @@ body{
     @media (max-width: variables.$breakpoint-md) {
         font-size: 0.91rem;
     }
+    @media (max-width: variables.$breakpoint-xxs) {
+        font-size: 0.78rem;
+    }
+    @media (max-width: variables.$breakpoint-xss) {
+        font-size: 0.75rem;
+    }
 }
 .paragraph{
     color: variables.$fontColorLight;
@@ -95,6 +120,12 @@ body{
     padding-bottom: 0.85rem;
     @media (max-width: variables.$breakpoint-sm) {
         font-size: 0.78rem;
+    }
+    @media (max-width: variables.$breakpoint-xxs) {
+        font-size: 0.69rem;
+    }
+    @media (max-width: variables.$breakpoint-xss) {
+        font-size: 0.65rem;
     }
 }
 .button-primary{
@@ -116,6 +147,10 @@ body{
     @media (max-width: variables.$breakpoint-sm) {
         font-size: 0.78rem;
     }
+    @media (max-width: variables.$breakpoint-xxs) {
+        font-size: 0.65rem;
+        padding: 0.65rem 1rem;
+    }
 }
 .button-secondary{
     padding: 0.75rem 1.75rem;
@@ -125,7 +160,6 @@ body{
     color: variables.$fontColorLight;
     text-transform: uppercase;
     font-family: variables.$titleFont;
-    font-weight: 600;
     font-size: 0.88rem;
     text-decoration: none;
     cursor: pointer;
@@ -139,6 +173,10 @@ body{
     }
     @media (max-width: variables.$breakpoint-sm) {
         font-size: 0.78rem;
+    }
+    @media (max-width: variables.$breakpoint-xxs) {
+        font-size: 0.65rem;
+        padding: 0.65rem 1rem;
     }
 }
 .container{

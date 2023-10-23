@@ -7,7 +7,7 @@ header{
   max-width: 80rem;
   margin: 0 auto;
   height: auto;
-  padding: 1.25rem;
+  padding: 1.5rem;
   
   display: flex;
   justify-content: space-between;
@@ -48,6 +48,9 @@ header{
       list-style: none;
       max-width: 30rem;
       margin: 21rem auto;
+      @media (max-width: variables.$breakpoint-xss) {
+        margin: 18rem auto;
+      }
   
       li {
         a {
